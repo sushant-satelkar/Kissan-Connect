@@ -1,0 +1,150 @@
+.order-management h2 {
+  color: #2e8b57;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.order-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  padding: 8px 15px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.filter-button:hover {
+  background-color: #e0e0e0;
+}
+
+.filter-button.active {
+  background-color: #2e8b57;
+  color: white;
+}
+
+.no-orders-message {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  margin: 30px 0;
+}
+
+.order-table-container {
+  overflow-x: auto;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.order-table th, .order-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-table th {
+  background-color: #f9f9f9;
+  font-weight: 600;
+  color: #333;
+}
+
+.order-row {
+  transition: background-color 0.3s;
+}
+
+.order-row:hover {
+  background-color: #f5f5f5;
+}
+
+.order-row.accepted {
+  background-color: #e8f5e9;
+}
+
+.order-row.rejected {
+  background-color: #ffebee;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-badge.pending {
+  background-color: #fff9c4;
+  color: #fbc02d;
+}
+
+.status-badge.accepted {
+  background-color: #c8e6c9;
+  color: #4caf50;
+}
+
+.status-badge.rejected {
+  background-color: #ffcdd2;
+  color: #f44336;
+}
+
+.order-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.accept-button, .reject-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 12px;
+  transition: background-color 0.3s;
+}
+
+.accept-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.reject-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.accept-button:hover {
+  background-color: #3d8b40;
+}
+
+.reject-button:hover {
+  background-color: #d32f2f;
+}
+
+.action-taken {
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .order-table th, .order-table td {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  
+  .order-actions {
+    flex-direction: column;
+    gap: 5px;
+  }
+} 

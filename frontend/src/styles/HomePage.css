@@ -1,0 +1,82 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dashboard-links-section {
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+}
+
+.dashboard-links-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.dashboard-link-card {
+  flex: 1;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dashboard-link-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-link-card h2 {
+  color: #2e8b57;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.dashboard-link-card p {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.dashboard-link-button {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dashboard-link-button:hover {
+  background-color: #236b43;
+}
+
+.dashboard-link-card.farmer {
+  border-top: 5px solid #4caf50;
+}
+
+.dashboard-link-card.consumer {
+  border-top: 5px solid #2196f3;
+}
+
+@media (max-width: 768px) {
+  .dashboard-links-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dashboard-link-card {
+    width: 100%;
+  }
+} 

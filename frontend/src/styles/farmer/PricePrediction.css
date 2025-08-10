@@ -1,0 +1,217 @@
+.price-prediction {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.price-prediction h2 {
+  color: #2e7d32;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.error-message {
+  background-color: #fff8e1;
+  border-left: 4px solid #ff9800;
+  color: #333;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.prediction-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .prediction-container {
+    flex-direction: row;
+  }
+}
+
+.prediction-form-container,
+.prediction-result-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.prediction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group.optional-field label {
+  color: #666;
+  font-weight: normal;
+}
+
+.form-group.optional-field::before {
+  content: "Optional";
+  font-size: 12px;
+  color: #999;
+  margin-left: 5px;
+}
+
+.weather-info {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e3f2fd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.weather-info h4 {
+  margin-top: 0;
+  color: #0277bd;
+}
+
+.predict-button {
+  background-color: #2e7d32;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.predict-button:hover {
+  background-color: #1b5e20;
+}
+
+.predict-button:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+.prediction-result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prediction-result,
+.no-prediction {
+  width: 100%;
+  text-align: center;
+}
+
+.prediction-result h3 {
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.price-range {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.min-price,
+.median-price,
+.max-price {
+  flex: 1;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.min-price {
+  color: #f57c00;
+  background-color: #fff3e0;
+  border-radius: 4px 0 0 4px;
+}
+
+.median-price {
+  color: #2e7d32;
+  background-color: #e8f5e9;
+  font-size: 28px;
+  border-top: 2px solid #2e7d32;
+  border-bottom: 2px solid #2e7d32;
+}
+
+.max-price {
+  color: #0277bd;
+  background-color: #e1f5fe;
+  border-radius: 0 4px 4px 0;
+}
+
+.price-range-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.price-range-labels span {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.prediction-confidence {
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.prediction-note {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}
+
+.prediction-tips {
+  margin-top: 30px;
+  text-align: left;
+  padding: 15px;
+  background-color: #e8f5e9;
+  border-radius: 4px;
+}
+
+.prediction-tips h4 {
+  color: #2e7d32;
+  margin-top: 0;
+}
+
+.prediction-tips ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.prediction-tips li {
+  margin-bottom: 8px;
+  font-size: 14px;
+} 
